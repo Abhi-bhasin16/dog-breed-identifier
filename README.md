@@ -1,10 +1,12 @@
 ---
 title: Dog Breed Identifier 🐶
+emoji: 🐶
 colorFrom: yellow
 colorTo: orange
 sdk: gradio
 sdk_version: "5.0.0"
 app_file: app.py
+pinned: false
 ---
 
 # Dog Breed Identifier
@@ -36,23 +38,13 @@ After training:
    ```bash
    pip install huggingface_hub
    huggingface-cli login
-   huggingface-cli upload YOUR_USERNAME/dog-breed-classifier model.pth model.pth
+   huggingface-cli upload Abhibhasin16/dog-breed-classifier model.pth model.pth
    ```
 
-2. **Create a Space** on HF Spaces (Gradio SDK).
-
-3. **Link your GitHub repo** to the Space, or push directly:
+2. Push code to the Space:
    ```bash
-   git remote add space https://huggingface.co/spaces/YOUR_USERNAME/dog-breed-identifier
-   git push space main
+   git push https://Abhibhasin16:YOUR_TOKEN@huggingface.co/spaces/Abhibhasin16/dog-breed-identifier main
    ```
-
-4. **Set the env variable** in your Space settings:
-   ```
-   HF_MODEL_REPO = YOUR_USERNAME/dog-breed-classifier
-   ```
-
-The app will auto-download the model on first launch.
 
 ## Model details
 
