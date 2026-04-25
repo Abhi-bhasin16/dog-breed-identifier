@@ -155,9 +155,6 @@ def main(args):
     print(f"\nDone. Best val accuracy: {best_val_acc:.3f}")
     print(f"Checkpoint saved to: {CHECKPOINT_PATH}")
     print(f"Class names saved to: {CLASSES_PATH}")
-    print("\nNext steps:")
-    print("  1. Upload model.pth to Hugging Face Hub (see README.md)")
-    print("  2. Run: python app.py  to test locally")
 
 
 if __name__ == "__main__":
