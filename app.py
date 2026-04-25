@@ -86,7 +86,7 @@ example_dir = Path("examples")
 if example_dir.exists():
     EXAMPLES = [[str(p)] for p in sorted(example_dir.glob("*.jpg"))[:6]]
 
-with gr.Blocks(title="Dog Breed Identifier") as demo:
+with gr.Blocks(title="Dog Breed Identifier", theme=gr.themes.Soft()) as demo:
     gr.Markdown(
         """
         # 🐶 Dog Breed Identifier
@@ -117,4 +117,4 @@ with gr.Blocks(title="Dog Breed Identifier") as demo:
     )
 
 if __name__ == "__main__":
-    demo.launch(theme=gr.themes.Soft())
+    demo.launch()
